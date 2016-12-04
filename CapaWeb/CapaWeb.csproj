@@ -70,6 +70,7 @@
   <ItemGroup>
     <Content Include="AgregarObras.aspx" />
     <Content Include="Index.html" />
+    <Content Include="Login.aspx" />
     <Content Include="packages.config" />
     <Content Include="Service References\ArtistaServ\CapaWeb.ArtistaServ.Artista.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -221,6 +222,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\ArtistaServ\Reference.cs">

@@ -13,7 +13,6 @@ namespace CapaInterface
         bool AgregarObra(string codigo, string artistaRut, string estilo, long valor, string dimensiones, string procedencia, string cuidadosEspeciales, int ubicacionId, DateTime? fechaIngreso);
         bool VerificarObra(string codigo);
         IList<Obra> ListarObras();
-        IList<Obra> ListarObrasArtista(string artistaRut);
-        
+        IList<Obra> ListarObrasArtista(string artistaRut);  
     }
 }

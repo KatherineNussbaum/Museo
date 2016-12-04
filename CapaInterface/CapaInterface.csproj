@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IArtistaBO.cs" />
+    <Compile Include="IObraCompletoBO.cs" />
     <Compile Include="IUsuariosBO.cs" />
     <Compile Include="IObraBO.cs" />
     <Compile Include="IPersonaBO.cs" />

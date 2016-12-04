@@ -40,6 +40,5 @@ namespace CapaServicio
         {
             return this._obraBO.VerificarObra(codigo);
         }
-
     }
 }

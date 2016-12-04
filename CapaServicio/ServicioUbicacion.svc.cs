@@ -24,6 +24,5 @@ namespace CapaServicio
         {
             return this._ubicacionBO.ListarUbicaciones();
         }
-
     }
 }

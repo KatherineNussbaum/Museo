@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="73779542-d333-49f2-8b15-d8fab43cb8c2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50274/ServicioUbicacion.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioUbicacion.xsd" MetadataType="Schema" ID="76490382-37a1-415c-b715-bcfd34f023b0" SourceId="1" SourceUrl="http://localhost:50274/ServicioUbicacion.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioUbicacion.disco" MetadataType="Disco" ID="fa1ec2b3-0274-439b-95cf-4384eeab83a5" SourceId="1" SourceUrl="http://localhost:50274/ServicioUbicacion.svc?disco" />
+    <MetadataFile FileName="ServicioUbicacion1.xsd" MetadataType="Schema" ID="2f619941-4192-4489-a674-6f3fd23a568c" SourceId="1" SourceUrl="http://localhost:50274/ServicioUbicacion.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioUbicacion.wsdl" MetadataType="Wsdl" ID="451d9a6e-2c92-412a-87b1-905de48547aa" SourceId="1" SourceUrl="http://localhost:50274/ServicioUbicacion.svc?wsdl" />
+    <MetadataFile FileName="ServicioUbicacion2.xsd" MetadataType="Schema" ID="6748f7b1-5019-4d4e-9fcc-b552be7c4b13" SourceId="1" SourceUrl="http://localhost:50274/ServicioUbicacion.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -11,9 +11,9 @@
           <ScalarProperty Name="Dimensiones" ColumnName="Dimensiones" />
           <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
           <ScalarProperty Name="Procedencia" ColumnName="Procedencia" />
-          <ScalarProperty Name="Temperatura" ColumnName="Temperatura" />
-          <ScalarProperty Name="Humedad" ColumnName="Humedad" />
-          <ScalarProperty Name="UbicacionSalon" ColumnName="UbicacionSalon" />
+          <ScalarProperty Name="CuidadosEspeciales" ColumnName="CuidadosEspeciales" />
+          <ScalarProperty Name="UbicacionId" ColumnName="UbicacionId" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -45,10 +45,19 @@
     <EntitySetMapping Name="Ubicacion">
       <EntityTypeMapping TypeName="MuseoModel.Ubicacion">
         <MappingFragment StoreEntitySet="Ubicacion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Salon" ColumnName="Salon" />
           <ScalarProperty Name="Iluminacion" ColumnName="Iluminacion" />
           <ScalarProperty Name="MaxObras" ColumnName="MaxObras" />
           <ScalarProperty Name="MetrosCuadrados" ColumnName="MetrosCuadrados" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="MuseoModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

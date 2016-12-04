@@ -39,30 +39,34 @@ namespace CapaNegocio
             {
                 throw new PersonaException("Error: falta apellido paterno.");
             }
-            if (VerificarPersona(rut))
+            if (!this.VerificarPersona(rut))
             {
-                throw new PersonaException("Error: Persona ya se encuentra registrado.");
+                Persona persona = new Persona
+                {
+                    Rut = rut,
+                    Div = dv,
+                    Nombres = nombres,
+                    ApPaterno = apPaterno,
+                    ApMaterno = apMaterno,
+                    Sexo = sexo,
+                    FechaNacimiento = fechaNacimiento,
+                    Domicilio = domicilio,
+                    Fono = fono,
+                    Email = email,
+                    Tipo = tipo
+                };
+                this._objContext.Persona.Add(persona);
+                return this._objContext.SaveChanges() > 0;
             }
-
-            Persona persona = new Persona
-            {
-                Rut = rut,
-                Div = dv,
-                Nombres = nombres,
-                ApPaterno = apPaterno,
-                ApMaterno = apMaterno,
-                Sexo = sexo,
-                FechaNacimiento = fechaNacimiento,
-                Domicilio = domicilio,
-                Fono = fono,
-                Email = email,
-                Tipo = tipo
-            };
-            this._objContext.Persona.Add(persona);
-            return this._objContext.SaveChanges() > 0;
+            return false;
         }
+
         public bool VerificarPersona(string rut)
         {
+            if(string.IsNullOrEmpty(rut) || string.IsNullOrWhiteSpace(rut))
+            {
+                throw new PersonaException("Error: falta rut");
+            }
             return this._objContext.Persona.Any(p => p.Rut == rut);
         }
 

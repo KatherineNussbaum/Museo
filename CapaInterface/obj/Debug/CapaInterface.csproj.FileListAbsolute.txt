@@ -20,3 +20,14 @@ C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaInterface\bin\Debug\EntityF
 C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaInterface\obj\Debug\CapaInterface.csprojResolveAssemblyReference.cache
 C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaInterface\obj\Debug\CapaInterface.dll
 C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaInterface\obj\Debug\CapaInterface.pdb
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaInterface\bin\Debug\CapaInterface.dll
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaInterface\bin\Debug\CapaInterface.pdb
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaInterface\bin\Debug\CapaDato.dll
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaInterface\bin\Debug\CapaEntidad.dll
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaInterface\bin\Debug\EntityFramework.dll
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaInterface\bin\Debug\CapaDato.pdb
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaInterface\bin\Debug\CapaEntidad.pdb
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaInterface\bin\Debug\EntityFramework.xml
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaInterface\obj\Debug\CapaInterface.csprojResolveAssemblyReference.cache
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaInterface\obj\Debug\CapaInterface.dll
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaInterface\obj\Debug\CapaInterface.pdb

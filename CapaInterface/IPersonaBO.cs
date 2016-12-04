@@ -13,6 +13,5 @@ namespace CapaInterface
         bool AgregarPersona(string rut, string dv, string nombres, string apPaterno, string apMaterno, string sexo, DateTime? fechaNacimiento, string domicilio, string fono, string email, int tipo);
         bool VerificarPersona(string rut);
         IList<Persona> ListarArtistas();
-
     }
 }

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50274/ServicioObra.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CapaDato" />
+  <xs:element name="AgregarObra">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="artistaRut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="estilo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="valor" type="xs:long" />
+        <xs:element minOccurs="0" name="dimensiones" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fechaCreacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="procedencia" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="temperatura" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="humedad" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ubicacionSalon" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgregarObraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AgregarObraResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerificarObra">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerificarObraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VerificarObraResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarObras">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarObrasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CapaDato" minOccurs="0" name="ListarObrasResult" nillable="true" type="q1:ArrayOfObra" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

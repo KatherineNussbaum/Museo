@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IUsuariosBO.cs" />
     <Compile Include="IObraBO.cs" />
     <Compile Include="IPersonaBO.cs" />
     <Compile Include="ITipoBO.cs" />
@@ -48,7 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaDato\CapaDato.csproj">
-      <Project>{5ab25f1c-0603-4f54-8db5-305564640afb}</Project>
+      <Project>{6cc245fc-4861-4276-97a3-a5194f8dafe7}</Project>
       <Name>CapaDato</Name>
     </ProjectReference>
     <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">

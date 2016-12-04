@@ -21,32 +21,47 @@ namespace CapaNegocio
         }
 
         public bool AgregarObra(string codigo, string artistaRut, string estilo, long valor, string dimensiones,
-        string fechaCreacion, DateTime? procedencia, string temperatura, string humedad, string ubicacionSalon)
+        DateTime fechaCreacion, string procedencia, string cuidadosEspeciales, int ubicacionId, DateTime fechaIngreso)
         {
             if (string.IsNullOrEmpty(codigo) || string.IsNullOrWhiteSpace(codigo))
             {
                 throw new ObraException("Error: falta Codigo.");
             }
-
-            Obra obra = new Obra
+            if (string.IsNullOrEmpty(artistaRut) || string.IsNullOrWhiteSpace(artistaRut))
             {
-                Codigo = codigo,
-                ArtistaRut = artistaRut,
-                Estilo = estilo,
-                Valor = valor,
-                Dimensiones = dimensiones,
-                FechaCreacion = fechaCreacion,
-                Procedencia = procedencia,
-                Temperatura = temperatura,
-                Humedad = humedad,
-                UbicacionSalon = ubicacionSalon
-                
-            };
-            this._objContext.Obra.Add(obra);
-            return this._objContext.SaveChanges() > 0;
+                throw new ObraException("Error: falta rut de artista");
+            }
+            if (ubicacionId <= 0)
+            {
+                throw new ObraException("Error: falta id de ubicación");
+            }
+            if (!this.VerificarObra(codigo))
+            {
+                Obra obra = new Obra
+                {
+                    Codigo = codigo,
+                    ArtistaRut = artistaRut,
+                    Estilo = estilo,
+                    Valor = valor,
+                    Dimensiones = dimensiones,
+                    FechaCreacion = fechaCreacion,
+                    Procedencia = procedencia,
+                    CuidadosEspeciales = cuidadosEspeciales,
+                    UbicacionId = ubicacionId,
+                    FechaIngreso = fechaIngreso
+                };
+                this._objContext.Obra.Add(obra);
+                return this._objContext.SaveChanges() > 0;
+            }
+            return false;
         }
+
         public bool VerificarObra(string codigo)
         {
+            if (string.IsNullOrEmpty(codigo) || string.IsNullOrWhiteSpace(codigo))
+            {
+                throw new ObraException("Error: falta código de obra");
+            }
             return this._objContext.Obra.Any(o => o.Codigo == codigo);
         }
 
@@ -54,7 +69,14 @@ namespace CapaNegocio
         {
             return this._objContext.Obra.ToList();
         }
-        
-    }
 
+        public IList<Obra> ListarObrasArtista(string artistaRut)
+        {
+            if (string.IsNullOrEmpty(artistaRut) || string.IsNullOrWhiteSpace(artistaRut))
+            {
+                throw new ObraException("Error: falta rut de artista");
+            }
+            return this._objContext.Obra.Where(o => o.ArtistaRut == artistaRut).ToList();
+        }
+    }
 }

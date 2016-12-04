@@ -15,10 +15,12 @@ namespace CapaServicio
     {
         [OperationContract]
         bool AgregarObra(string codigo, string artistaRut, string estilo, long valor, string dimensiones,
-        string fechaCreacion, DateTime? procedencia, string temperatura, string humedad, string ubicacionSalon);
+        DateTime fechaCreacion, string procedencia, string cuidadosEspeciales, int ubicacionId, DateTime fechaIngreso);
         [OperationContract]
         bool VerificarObra(string codigo);
         [OperationContract]
         IList<Obra> ListarObras();
+        [OperationContract]
+        IList<Obra> ListarObrasArtista(string artistaRut);
     }
 }

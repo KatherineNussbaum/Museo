@@ -29,5 +29,6 @@ namespace CapaDato
         public virtual DbSet<Persona> Persona { get; set; }
         public virtual DbSet<Tipo> Tipo { get; set; }
         public virtual DbSet<Ubicacion> Ubicacion { get; set; }
+        public virtual DbSet<Usuarios> Usuarios { get; set; }
     }
 }

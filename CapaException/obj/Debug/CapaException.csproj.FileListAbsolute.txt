@@ -3,3 +3,7 @@ X:\SantoTomas\Semestre 4\puntoNet\Museo\Museo\CapaException\bin\Debug\CapaExcept
 X:\SantoTomas\Semestre 4\puntoNet\Museo\Museo\CapaException\obj\Debug\CapaException.csprojResolveAssemblyReference.cache
 X:\SantoTomas\Semestre 4\puntoNet\Museo\Museo\CapaException\obj\Debug\CapaException.dll
 X:\SantoTomas\Semestre 4\puntoNet\Museo\Museo\CapaException\obj\Debug\CapaException.pdb
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaException\bin\Debug\CapaException.dll
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaException\bin\Debug\CapaException.pdb
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaException\obj\Debug\CapaException.dll
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaException\obj\Debug\CapaException.pdb

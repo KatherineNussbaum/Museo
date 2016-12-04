@@ -9,13 +9,13 @@
     <Property Name="Estilo" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="Valor" Type="Int64" />
     <Property Name="Dimensiones" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
-    <Property Name="FechaCreacion" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
-    <Property Name="Procedencia" Type="DateTime" Precision="0" />
-    <Property Name="Temperatura" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Humedad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="UbicacionSalon" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="Persona" Relationship="Self.FK__Obra__ArtistaRut__34C8D9D1" FromRole="Obra" ToRole="Persona" />
-    <NavigationProperty Name="Ubicacion" Relationship="Self.FK__Obra__UbicacionS__35BCFE0A" FromRole="Obra" ToRole="Ubicacion" />
+    <Property Name="FechaCreacion" Type="DateTime" Precision="0" />
+    <Property Name="Procedencia" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CuidadosEspeciales" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="UbicacionId" Type="Int32" Nullable="false" />
+    <Property Name="FechaIngreso" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK__Obra__ArtistaRut__2F10007B" FromRole="Obra" ToRole="Persona" />
+    <NavigationProperty Name="Ubicacion" Relationship="Self.FK__Obra__UbicacionI__300424B4" FromRole="Obra" ToRole="Ubicacion" />
   </EntityType>
   <EntityType Name="Persona">
     <Key>
@@ -32,8 +32,8 @@
     <Property Name="Fono" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
     <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="Tipo" Type="Int32" />
-    <NavigationProperty Name="Obra" Relationship="Self.FK__Obra__ArtistaRut__34C8D9D1" FromRole="Persona" ToRole="Obra" />
-    <NavigationProperty Name="Tipo1" Relationship="Self.FK__Persona__Tipo__300424B4" FromRole="Persona" ToRole="Tipo" />
+    <NavigationProperty Name="Obra" Relationship="Self.FK__Obra__ArtistaRut__2F10007B" FromRole="Persona" ToRole="Obra" />
+    <NavigationProperty Name="Tipo1" Relationship="Self.FK__Persona__Tipo__2C3393D0" FromRole="Persona" ToRole="Tipo" />
   </EntityType>
   <EntityType Name="Tipo">
     <Key>
@@ -41,19 +41,27 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TipoPersona" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="Persona" Relationship="Self.FK__Persona__Tipo__300424B4" FromRole="Tipo" ToRole="Persona" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK__Persona__Tipo__2C3393D0" FromRole="Tipo" ToRole="Persona" />
   </EntityType>
   <EntityType Name="Ubicacion">
     <Key>
-      <PropertyRef Name="Salon" />
+      <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Salon" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Salon" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="Iluminacion" Type="Int32" />
     <Property Name="MaxObras" Type="Int32" />
     <Property Name="MetrosCuadrados" Type="Int32" />
-    <NavigationProperty Name="Obra" Relationship="Self.FK__Obra__UbicacionS__35BCFE0A" FromRole="Ubicacion" ToRole="Obra" />
+    <NavigationProperty Name="Obra" Relationship="Self.FK__Obra__UbicacionI__300424B4" FromRole="Ubicacion" ToRole="Obra" />
   </EntityType>
-  <Association Name="FK__Obra__ArtistaRut__34C8D9D1">
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Usuario" />
+    </Key>
+    <Property Name="Usuario" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pass" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK__Obra__ArtistaRut__2F10007B">
     <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
     <End Role="Obra" Type="Self.Obra" Multiplicity="*" />
     <ReferentialConstraint>
@@ -65,19 +73,19 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Obra__UbicacionS__35BCFE0A">
+  <Association Name="FK__Obra__UbicacionI__300424B4">
     <End Role="Ubicacion" Type="Self.Ubicacion" Multiplicity="1" />
     <End Role="Obra" Type="Self.Obra" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Ubicacion">
-        <PropertyRef Name="Salon" />
+        <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Obra">
-        <PropertyRef Name="UbicacionSalon" />
+        <PropertyRef Name="UbicacionId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Persona__Tipo__300424B4">
+  <Association Name="FK__Persona__Tipo__2C3393D0">
     <End Role="Tipo" Type="Self.Tipo" Multiplicity="0..1" />
     <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
     <ReferentialConstraint>
@@ -94,15 +102,16 @@
     <EntitySet Name="Persona" EntityType="Self.Persona" />
     <EntitySet Name="Tipo" EntityType="Self.Tipo" />
     <EntitySet Name="Ubicacion" EntityType="Self.Ubicacion" />
-    <AssociationSet Name="FK__Obra__ArtistaRut__34C8D9D1" Association="Self.FK__Obra__ArtistaRut__34C8D9D1">
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+    <AssociationSet Name="FK__Obra__ArtistaRut__2F10007B" Association="Self.FK__Obra__ArtistaRut__2F10007B">
       <End Role="Persona" EntitySet="Persona" />
       <End Role="Obra" EntitySet="Obra" />
     </AssociationSet>
-    <AssociationSet Name="FK__Obra__UbicacionS__35BCFE0A" Association="Self.FK__Obra__UbicacionS__35BCFE0A">
+    <AssociationSet Name="FK__Obra__UbicacionI__300424B4" Association="Self.FK__Obra__UbicacionI__300424B4">
       <End Role="Ubicacion" EntitySet="Ubicacion" />
       <End Role="Obra" EntitySet="Obra" />
     </AssociationSet>
-    <AssociationSet Name="FK__Persona__Tipo__300424B4" Association="Self.FK__Persona__Tipo__300424B4">
+    <AssociationSet Name="FK__Persona__Tipo__2C3393D0" Association="Self.FK__Persona__Tipo__2C3393D0">
       <End Role="Tipo" EntitySet="Tipo" />
       <End Role="Persona" EntitySet="Persona" />
     </AssociationSet>

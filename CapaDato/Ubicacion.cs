@@ -20,6 +20,7 @@ namespace CapaDato
             this.Obra = new HashSet<Obra>();
         }
     
+        public int Id { get; set; }
         public string Salon { get; set; }
         public Nullable<int> Iluminacion { get; set; }
         public Nullable<int> MaxObras { get; set; }

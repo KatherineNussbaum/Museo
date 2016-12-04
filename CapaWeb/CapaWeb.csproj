@@ -43,19 +43,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -74,8 +68,109 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Index.html" />
     <Content Include="packages.config" />
+    <Content Include="Service References\ObraServ\CapaWeb.ObraServ.Obra.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ObraServ\ServicioObra.disco" />
+    <None Include="Service References\ObraServ\configuration91.svcinfo" />
+    <None Include="Service References\ObraServ\configuration.svcinfo" />
+    <None Include="Service References\ObraServ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\PersonaServ\CapaWeb.PersonaServ.Persona.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\PersonaServ\ServicioPersona.disco" />
+    <None Include="Service References\PersonaServ\configuration91.svcinfo" />
+    <None Include="Service References\PersonaServ\configuration.svcinfo" />
+    <None Include="Service References\PersonaServ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\TipoServ\CapaWeb.TipoServ.Tipo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\TipoServ\ServicioTipo.disco" />
+    <None Include="Service References\TipoServ\configuration91.svcinfo" />
+    <None Include="Service References\TipoServ\configuration.svcinfo" />
+    <None Include="Service References\TipoServ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\UbicacionServ\CapaWeb.UbicacionServ.Ubicacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\UbicacionServ\ServicioUbicacion.disco" />
+    <None Include="Service References\UbicacionServ\configuration91.svcinfo" />
+    <None Include="Service References\UbicacionServ\configuration.svcinfo" />
+    <None Include="Service References\UbicacionServ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\UsuariosServ\CapaWeb.UsuariosServ.Usuarios.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\UsuariosServ\ServicioUsuarios.disco" />
+    <None Include="Service References\UsuariosServ\configuration91.svcinfo" />
+    <None Include="Service References\UsuariosServ\configuration.svcinfo" />
+    <None Include="Service References\UsuariosServ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Temnplate.Master" />
+    <None Include="Service References\ObraServ\ServicioObra.wsdl" />
+    <None Include="Service References\ObraServ\ServicioObra.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ObraServ\ServicioObra1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ObraServ\ServicioObra2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PersonaServ\ServicioPersona.wsdl" />
+    <None Include="Service References\PersonaServ\ServicioPersona.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PersonaServ\ServicioPersona1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PersonaServ\ServicioPersona2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TipoServ\ServicioTipo.wsdl" />
+    <None Include="Service References\TipoServ\ServicioTipo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TipoServ\ServicioTipo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TipoServ\ServicioTipo2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UbicacionServ\ServicioUbicacion.wsdl" />
+    <None Include="Service References\UbicacionServ\ServicioUbicacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UbicacionServ\ServicioUbicacion1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UbicacionServ\ServicioUbicacion2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UsuariosServ\ServicioUsuarios.wsdl" />
+    <None Include="Service References\UsuariosServ\ServicioUsuarios.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UsuariosServ\ServicioUsuarios1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UsuariosServ\ServicioUsuarios2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -100,6 +195,31 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ObraServ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PersonaServ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TipoServ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UbicacionServ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UsuariosServ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Temnplate.Master.cs">
       <DependentUpon>Temnplate.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -114,6 +234,13 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ObraServ\" />
+    <WCFMetadataStorage Include="Service References\PersonaServ\" />
+    <WCFMetadataStorage Include="Service References\TipoServ\" />
+    <WCFMetadataStorage Include="Service References\UbicacionServ\" />
+    <WCFMetadataStorage Include="Service References\UsuariosServ\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

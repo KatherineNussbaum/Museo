@@ -54,6 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoBO.cs" />
     <Compile Include="UbicacionBO.cs" />
+    <Compile Include="UsuariosBO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -61,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaDato\CapaDato.csproj">
-      <Project>{5ab25f1c-0603-4f54-8db5-305564640afb}</Project>
+      <Project>{6cc245fc-4861-4276-97a3-a5194f8dafe7}</Project>
       <Name>CapaDato</Name>
     </ProjectReference>
     <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">

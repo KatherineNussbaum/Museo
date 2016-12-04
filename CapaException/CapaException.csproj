@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArtistaException.cs" />
     <Compile Include="ObraException.cs" />
     <Compile Include="PersonaException.cs" />
     <Compile Include="TipoException.cs" />

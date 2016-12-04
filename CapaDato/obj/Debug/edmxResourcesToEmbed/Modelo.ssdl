@@ -9,11 +9,10 @@
     <Property Name="Estilo" Type="nvarchar" MaxLength="250" />
     <Property Name="Valor" Type="bigint" />
     <Property Name="Dimensiones" Type="nvarchar" MaxLength="250" />
-    <Property Name="FechaCreacion" Type="smalldatetime" />
     <Property Name="Procedencia" Type="nvarchar" MaxLength="250" />
-    <Property Name="CuidadosEspeciales" Type="nvarchar" MaxLength="1" />
+    <Property Name="CuidadosEspeciales" Type="nvarchar" MaxLength="250" />
     <Property Name="UbicacionId" Type="int" Nullable="false" />
-    <Property Name="FechaIngreso" Type="smalldatetime" />
+    <Property Name="FechaIngreso" Type="smalldatetime" Nullable="false" />
   </EntityType>
   <EntityType Name="Persona">
     <Key>
@@ -55,7 +54,7 @@
     <Property Name="Usuario" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="Pass" Type="nvarchar" MaxLength="250" />
   </EntityType>
-  <Association Name="FK__Obra__ArtistaRut__2F10007B">
+  <Association Name="FK__Obra__ArtistaRut__3D5E1FD2">
     <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
     <End Role="Obra" Type="Self.Obra" Multiplicity="*" />
     <ReferentialConstraint>
@@ -67,7 +66,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Obra__UbicacionI__300424B4">
+  <Association Name="FK__Obra__UbicacionI__3E52440B">
     <End Role="Ubicacion" Type="Self.Ubicacion" Multiplicity="1" />
     <End Role="Obra" Type="Self.Obra" Multiplicity="*" />
     <ReferentialConstraint>
@@ -97,11 +96,11 @@
     <EntitySet Name="Tipo" EntityType="Self.Tipo" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Ubicacion" EntityType="Self.Ubicacion" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__Obra__ArtistaRut__2F10007B" Association="Self.FK__Obra__ArtistaRut__2F10007B">
+    <AssociationSet Name="FK__Obra__ArtistaRut__3D5E1FD2" Association="Self.FK__Obra__ArtistaRut__3D5E1FD2">
       <End Role="Persona" EntitySet="Persona" />
       <End Role="Obra" EntitySet="Obra" />
     </AssociationSet>
-    <AssociationSet Name="FK__Obra__UbicacionI__300424B4" Association="Self.FK__Obra__UbicacionI__300424B4">
+    <AssociationSet Name="FK__Obra__UbicacionI__3E52440B" Association="Self.FK__Obra__UbicacionI__3E52440B">
       <End Role="Ubicacion" EntitySet="Ubicacion" />
       <End Role="Obra" EntitySet="Obra" />
     </AssociationSet>

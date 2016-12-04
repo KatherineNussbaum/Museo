@@ -34,6 +34,7 @@ C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaNegocio\bin\Debug\EntityFra
 C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaNegocio\bin\Debug\CapaNegocio.dll.config
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaNegocio\bin\Debug\CapaNegocio.dll
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaNegocio\bin\Debug\CapaNegocio.pdb
@@ -49,6 +50,5 @@ C:\Users\Katherine Nussbaum\Desktop\Museo\CapaNegocio\bin\Debug\CapaException.pd
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaNegocio\bin\Debug\CapaInterface.pdb
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaNegocio\bin\Debug\EntityFramework.xml
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaNegocio\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Katherine Nussbaum\Desktop\Museo\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaNegocio\obj\Debug\CapaNegocio.pdb

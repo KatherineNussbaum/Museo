@@ -38,9 +38,6 @@ namespace CapaWeb.ObraServ {
         private string EstiloField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> FechaCreacionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<System.DateTime> FechaIngresoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -129,19 +126,6 @@ namespace CapaWeb.ObraServ {
                 if ((object.ReferenceEquals(this.EstiloField, value) != true)) {
                     this.EstiloField = value;
                     this.RaisePropertyChanged("Estilo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> FechaCreacion {
-            get {
-                return this.FechaCreacionField;
-            }
-            set {
-                if ((this.FechaCreacionField.Equals(value) != true)) {
-                    this.FechaCreacionField = value;
-                    this.RaisePropertyChanged("FechaCreacion");
                 }
             }
         }
@@ -678,10 +662,10 @@ namespace CapaWeb.ObraServ {
     public interface IServicioObra {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioObra/AgregarObra", ReplyAction="http://tempuri.org/IServicioObra/AgregarObraResponse")]
-        bool AgregarObra(string codigo, string artistaRut, string estilo, long valor, string dimensiones, string fechaCreacion, System.Nullable<System.DateTime> procedencia, string temperatura, string humedad, string ubicacionSalon);
+        bool AgregarObra(string codigo, string artistaRut, string estilo, long valor, string dimensiones, string procedencia, string cuidadosEspeciales, int ubicacionId, System.Nullable<System.DateTime> fechaIngreso);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioObra/AgregarObra", ReplyAction="http://tempuri.org/IServicioObra/AgregarObraResponse")]
-        System.Threading.Tasks.Task<bool> AgregarObraAsync(string codigo, string artistaRut, string estilo, long valor, string dimensiones, string fechaCreacion, System.Nullable<System.DateTime> procedencia, string temperatura, string humedad, string ubicacionSalon);
+        System.Threading.Tasks.Task<bool> AgregarObraAsync(string codigo, string artistaRut, string estilo, long valor, string dimensiones, string procedencia, string cuidadosEspeciales, int ubicacionId, System.Nullable<System.DateTime> fechaIngreso);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioObra/VerificarObra", ReplyAction="http://tempuri.org/IServicioObra/VerificarObraResponse")]
         bool VerificarObra(string codigo);
@@ -694,6 +678,12 @@ namespace CapaWeb.ObraServ {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioObra/ListarObras", ReplyAction="http://tempuri.org/IServicioObra/ListarObrasResponse")]
         System.Threading.Tasks.Task<CapaWeb.ObraServ.Obra[]> ListarObrasAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioObra/ListarObrasArtista", ReplyAction="http://tempuri.org/IServicioObra/ListarObrasArtistaResponse")]
+        CapaWeb.ObraServ.Obra[] ListarObrasArtista(string artistaRut);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioObra/ListarObrasArtista", ReplyAction="http://tempuri.org/IServicioObra/ListarObrasArtistaResponse")]
+        System.Threading.Tasks.Task<CapaWeb.ObraServ.Obra[]> ListarObrasArtistaAsync(string artistaRut);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -723,12 +713,12 @@ namespace CapaWeb.ObraServ {
                 base(binding, remoteAddress) {
         }
         
-        public bool AgregarObra(string codigo, string artistaRut, string estilo, long valor, string dimensiones, string fechaCreacion, System.Nullable<System.DateTime> procedencia, string temperatura, string humedad, string ubicacionSalon) {
-            return base.Channel.AgregarObra(codigo, artistaRut, estilo, valor, dimensiones, fechaCreacion, procedencia, temperatura, humedad, ubicacionSalon);
+        public bool AgregarObra(string codigo, string artistaRut, string estilo, long valor, string dimensiones, string procedencia, string cuidadosEspeciales, int ubicacionId, System.Nullable<System.DateTime> fechaIngreso) {
+            return base.Channel.AgregarObra(codigo, artistaRut, estilo, valor, dimensiones, procedencia, cuidadosEspeciales, ubicacionId, fechaIngreso);
         }
         
-        public System.Threading.Tasks.Task<bool> AgregarObraAsync(string codigo, string artistaRut, string estilo, long valor, string dimensiones, string fechaCreacion, System.Nullable<System.DateTime> procedencia, string temperatura, string humedad, string ubicacionSalon) {
-            return base.Channel.AgregarObraAsync(codigo, artistaRut, estilo, valor, dimensiones, fechaCreacion, procedencia, temperatura, humedad, ubicacionSalon);
+        public System.Threading.Tasks.Task<bool> AgregarObraAsync(string codigo, string artistaRut, string estilo, long valor, string dimensiones, string procedencia, string cuidadosEspeciales, int ubicacionId, System.Nullable<System.DateTime> fechaIngreso) {
+            return base.Channel.AgregarObraAsync(codigo, artistaRut, estilo, valor, dimensiones, procedencia, cuidadosEspeciales, ubicacionId, fechaIngreso);
         }
         
         public bool VerificarObra(string codigo) {
@@ -745,6 +735,14 @@ namespace CapaWeb.ObraServ {
         
         public System.Threading.Tasks.Task<CapaWeb.ObraServ.Obra[]> ListarObrasAsync() {
             return base.Channel.ListarObrasAsync();
+        }
+        
+        public CapaWeb.ObraServ.Obra[] ListarObrasArtista(string artistaRut) {
+            return base.Channel.ListarObrasArtista(artistaRut);
+        }
+        
+        public System.Threading.Tasks.Task<CapaWeb.ObraServ.Obra[]> ListarObrasArtistaAsync(string artistaRut) {
+            return base.Channel.ListarObrasArtistaAsync(artistaRut);
         }
     }
 }

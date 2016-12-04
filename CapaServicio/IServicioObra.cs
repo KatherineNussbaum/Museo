@@ -14,8 +14,7 @@ namespace CapaServicio
     public interface IServicioObra
     {
         [OperationContract]
-        bool AgregarObra(string codigo, string artistaRut, string estilo, long valor, string dimensiones,
-        DateTime fechaCreacion, string procedencia, string cuidadosEspeciales, int ubicacionId, DateTime fechaIngreso);
+        bool AgregarObra(string codigo, string artistaRut, string estilo, long valor, string dimensiones, string procedencia, string cuidadosEspeciales, int ubicacionId, DateTime? fechaIngreso);
         [OperationContract]
         bool VerificarObra(string codigo);
         [OperationContract]

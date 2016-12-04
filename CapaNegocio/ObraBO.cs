@@ -20,8 +20,7 @@ namespace CapaNegocio
             this._objContext.Configuration.ProxyCreationEnabled = false;
         }
 
-        public bool AgregarObra(string codigo, string artistaRut, string estilo, long valor, string dimensiones,
-        DateTime fechaCreacion, string procedencia, string cuidadosEspeciales, int ubicacionId, DateTime fechaIngreso)
+        public bool AgregarObra(string codigo, string artistaRut, string estilo, long valor, string dimensiones, string procedencia, string cuidadosEspeciales, int ubicacionId, DateTime? fechaIngreso)
         {
             if (string.IsNullOrEmpty(codigo) || string.IsNullOrWhiteSpace(codigo))
             {
@@ -35,25 +34,24 @@ namespace CapaNegocio
             {
                 throw new ObraException("Error: falta id de ubicación");
             }
-            if (!this.VerificarObra(codigo))
+            if (this.VerificarObra(codigo))
             {
-                Obra obra = new Obra
-                {
-                    Codigo = codigo,
-                    ArtistaRut = artistaRut,
-                    Estilo = estilo,
-                    Valor = valor,
-                    Dimensiones = dimensiones,
-                    FechaCreacion = fechaCreacion,
-                    Procedencia = procedencia,
-                    CuidadosEspeciales = cuidadosEspeciales,
-                    UbicacionId = ubicacionId,
-                    FechaIngreso = fechaIngreso
-                };
-                this._objContext.Obra.Add(obra);
-                return this._objContext.SaveChanges() > 0;
+                throw new ObraException("Error: Obra ya existe");
             }
-            return false;
+            Obra obra = new Obra
+            {
+                Codigo = codigo,
+                ArtistaRut = artistaRut,
+                Estilo = estilo,
+                Valor = valor,
+                Dimensiones = dimensiones,
+                Procedencia = procedencia,
+                CuidadosEspeciales = cuidadosEspeciales,
+                UbicacionId = ubicacionId,
+                FechaIngreso = fechaIngreso
+            };
+            this._objContext.Obra.Add(obra);
+            return this._objContext.SaveChanges() > 0;
         }
 
         public bool VerificarObra(string codigo)

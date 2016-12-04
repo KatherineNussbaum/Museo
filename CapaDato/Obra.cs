@@ -19,11 +19,10 @@ namespace CapaDato
         public string Estilo { get; set; }
         public Nullable<long> Valor { get; set; }
         public string Dimensiones { get; set; }
-        public Nullable<System.DateTime> FechaCreacion { get; set; }
         public string Procedencia { get; set; }
         public string CuidadosEspeciales { get; set; }
         public int UbicacionId { get; set; }
-        public Nullable<System.DateTime> FechaIngreso { get; set; }
+        public System.DateTime? FechaIngreso { get; set; }
     
         public virtual Persona Persona { get; set; }
         public virtual Ubicacion Ubicacion { get; set; }

@@ -68,11 +68,32 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AgregarObras.aspx" />
     <Content Include="Index.html" />
     <Content Include="packages.config" />
+    <Content Include="Service References\ArtistaServ\CapaWeb.ArtistaServ.Artista.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ArtistaServ\ServicioArtista.disco" />
+    <None Include="Service References\ArtistaServ\configuration91.svcinfo" />
+    <None Include="Service References\ArtistaServ\configuration.svcinfo" />
+    <None Include="Service References\ArtistaServ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Service References\ObraServ\CapaWeb.ObraServ.Obra.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Service References\ArtistaServ\ServicioArtista.wsdl" />
+    <None Include="Service References\ArtistaServ\ServicioArtista.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ArtistaServ\ServicioArtista1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ArtistaServ\ServicioArtista2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\ObraServ\ServicioObra.disco" />
     <None Include="Service References\ObraServ\configuration91.svcinfo" />
     <None Include="Service References\ObraServ\configuration.svcinfo" />
@@ -191,10 +212,22 @@
     <Compile Include="AgregarArtista.aspx.designer.cs">
       <DependentUpon>AgregarArtista.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AgregarObras.aspx.cs">
+      <DependentUpon>AgregarObras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarObras.aspx.designer.cs">
+      <DependentUpon>AgregarObras.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ArtistaServ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ObraServ\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -236,6 +269,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ArtistaServ\" />
     <WCFMetadataStorage Include="Service References\ObraServ\" />
     <WCFMetadataStorage Include="Service References\PersonaServ\" />
     <WCFMetadataStorage Include="Service References\TipoServ\" />

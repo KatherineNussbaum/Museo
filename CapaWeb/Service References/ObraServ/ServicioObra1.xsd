@@ -13,7 +13,6 @@
       <xs:element minOccurs="0" name="CuidadosEspeciales" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Dimensiones" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Estilo" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="FechaCreacion" nillable="true" type="xs:dateTime" />
       <xs:element minOccurs="0" name="FechaIngreso" nillable="true" type="xs:dateTime" />
       <xs:element minOccurs="0" name="Persona" nillable="true" type="tns:Persona" />
       <xs:element minOccurs="0" name="Procedencia" nillable="true" type="xs:string" />

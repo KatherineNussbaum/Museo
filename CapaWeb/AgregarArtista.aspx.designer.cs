@@ -49,6 +49,24 @@ namespace CapaWeb {
         protected global::System.Web.UI.WebControls.TextBox TxtDv;
         
         /// <summary>
+        /// Control RdfRut.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RdfRut;
+        
+        /// <summary>
+        /// Control RdfDv.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RdfDv;
+        
+        /// <summary>
         /// Control TxtNombres.
         /// </summary>
         /// <remarks>
@@ -56,6 +74,15 @@ namespace CapaWeb {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtNombres;
+        
+        /// <summary>
+        /// Control RdfNombres.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RdfNombres;
         
         /// <summary>
         /// Control TxtApPaterno.
@@ -67,6 +94,15 @@ namespace CapaWeb {
         protected global::System.Web.UI.WebControls.TextBox TxtApPaterno;
         
         /// <summary>
+        /// Control RdfApPaterno.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RdfApPaterno;
+        
+        /// <summary>
         /// Control TxtApMaterno.
         /// </summary>
         /// <remarks>
@@ -74,6 +110,15 @@ namespace CapaWeb {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtApMaterno;
+        
+        /// <summary>
+        /// Control ValSumObligatorios.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValSumObligatorios;
         
         /// <summary>
         /// Control RdbFemenino.

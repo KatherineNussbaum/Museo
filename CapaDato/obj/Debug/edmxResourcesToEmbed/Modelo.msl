@@ -9,7 +9,6 @@
           <ScalarProperty Name="Estilo" ColumnName="Estilo" />
           <ScalarProperty Name="Valor" ColumnName="Valor" />
           <ScalarProperty Name="Dimensiones" ColumnName="Dimensiones" />
-          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
           <ScalarProperty Name="Procedencia" ColumnName="Procedencia" />
           <ScalarProperty Name="CuidadosEspeciales" ColumnName="CuidadosEspeciales" />
           <ScalarProperty Name="UbicacionId" ColumnName="UbicacionId" />

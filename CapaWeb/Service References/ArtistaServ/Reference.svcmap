@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="713e8aca-a374-4215-afe4-0a59b27f44ec" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50274/ServicioArtista.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioArtista.disco" MetadataType="Disco" ID="fd66b0e4-66e3-4531-ba32-2497ccc87e46" SourceId="1" SourceUrl="http://localhost:50274/ServicioArtista.svc?disco" />
+    <MetadataFile FileName="ServicioArtista.xsd" MetadataType="Schema" ID="06f89f28-c1ee-4910-abbd-5f42f6651380" SourceId="1" SourceUrl="http://localhost:50274/ServicioArtista.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioArtista1.xsd" MetadataType="Schema" ID="38efdc1b-37a4-4a89-83f7-fa67335da9b0" SourceId="1" SourceUrl="http://localhost:50274/ServicioArtista.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioArtista.wsdl" MetadataType="Wsdl" ID="44b78bf8-1a94-4433-9df4-7b20725cb56e" SourceId="1" SourceUrl="http://localhost:50274/ServicioArtista.svc?wsdl" />
+    <MetadataFile FileName="ServicioArtista2.xsd" MetadataType="Schema" ID="6c8aea92-5f3f-41f8-8613-a98e8e322368" SourceId="1" SourceUrl="http://localhost:50274/ServicioArtista.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

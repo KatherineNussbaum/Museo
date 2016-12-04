@@ -9,11 +9,10 @@
     <Property Name="Estilo" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="Valor" Type="Int64" />
     <Property Name="Dimensiones" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
-    <Property Name="FechaCreacion" Type="DateTime" Precision="0" />
     <Property Name="Procedencia" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
-    <Property Name="CuidadosEspeciales" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="CuidadosEspeciales" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="UbicacionId" Type="Int32" Nullable="false" />
-    <Property Name="FechaIngreso" Type="DateTime" Precision="0" />
+    <Property Name="FechaIngreso" Type="DateTime" Precision="0" Nullable="false" />
     <NavigationProperty Name="Persona" Relationship="Self.FK__Obra__ArtistaRut__2F10007B" FromRole="Obra" ToRole="Persona" />
     <NavigationProperty Name="Ubicacion" Relationship="Self.FK__Obra__UbicacionI__300424B4" FromRole="Obra" ToRole="Ubicacion" />
   </EntityType>

@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IArtistaBO.cs" />
     <Compile Include="IUsuariosBO.cs" />
     <Compile Include="IObraBO.cs" />
     <Compile Include="IPersonaBO.cs" />

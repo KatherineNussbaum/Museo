@@ -21,9 +21,9 @@ namespace CapaServicio
             this._obraBO = new ObraBO();
         }
 
-        public bool AgregarObra(string codigo, string artistaRut, string estilo, long valor, string dimensiones, DateTime fechaCreacion, string procedencia, string cuidadosEspeciales, int ubicacionId, DateTime fechaIngreso)
+        public bool AgregarObra(string codigo, string artistaRut, string estilo, long valor, string dimensiones, string procedencia, string cuidadosEspeciales, int ubicacionId, DateTime? fechaIngreso)
         {
-            return this._obraBO.AgregarObra(codigo, artistaRut, estilo, valor, dimensiones, fechaCreacion, procedencia, cuidadosEspeciales, ubicacionId, fechaIngreso);
+            return this._obraBO.AgregarObra(codigo, artistaRut, estilo, valor, dimensiones, procedencia, cuidadosEspeciales, ubicacionId, fechaIngreso);
         }
         
         public IList<Obra> ListarObras()

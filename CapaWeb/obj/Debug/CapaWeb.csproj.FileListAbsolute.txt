@@ -63,5 +63,6 @@ C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\CapaWeb.dll
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\CapaWeb.pdb
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\obj\Debug\CapaWeb.csprojResolveAssemblyReference.cache
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\obj\Debug\CapaWeb.dll
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\obj\Debug\CapaWeb.pdb

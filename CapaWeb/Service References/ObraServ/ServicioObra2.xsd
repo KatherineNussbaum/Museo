@@ -9,11 +9,10 @@
         <xs:element minOccurs="0" name="estilo" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="valor" type="xs:long" />
         <xs:element minOccurs="0" name="dimensiones" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="fechaCreacion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="procedencia" nillable="true" type="xs:dateTime" />
-        <xs:element minOccurs="0" name="temperatura" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="humedad" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="ubicacionSalon" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="procedencia" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cuidadosEspeciales" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ubicacionId" type="xs:int" />
+        <xs:element minOccurs="0" name="fechaIngreso" nillable="true" type="xs:dateTime" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -47,6 +46,20 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CapaDato" minOccurs="0" name="ListarObrasResult" nillable="true" type="q1:ArrayOfObra" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarObrasArtista">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="artistaRut" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarObrasArtistaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CapaDato" minOccurs="0" name="ListarObrasArtistaResult" nillable="true" type="q2:ArrayOfObra" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

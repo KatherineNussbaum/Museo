@@ -25,6 +25,12 @@
   <wsdl:message name="IServicioObra_ListarObras_OutputMessage">
     <wsdl:part name="parameters" element="tns:ListarObrasResponse" />
   </wsdl:message>
+  <wsdl:message name="IServicioObra_ListarObrasArtista_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarObrasArtista" />
+  </wsdl:message>
+  <wsdl:message name="IServicioObra_ListarObrasArtista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarObrasArtistaResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServicioObra">
     <wsdl:operation name="AgregarObra">
       <wsdl:input wsaw:Action="http://tempuri.org/IServicioObra/AgregarObra" message="tns:IServicioObra_AgregarObra_InputMessage" />
@@ -37,6 +43,10 @@
     <wsdl:operation name="ListarObras">
       <wsdl:input wsaw:Action="http://tempuri.org/IServicioObra/ListarObras" message="tns:IServicioObra_ListarObras_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServicioObra/ListarObrasResponse" message="tns:IServicioObra_ListarObras_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarObrasArtista">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioObra/ListarObrasArtista" message="tns:IServicioObra_ListarObrasArtista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioObra/ListarObrasArtistaResponse" message="tns:IServicioObra_ListarObrasArtista_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServicioObra" type="tns:IServicioObra">
@@ -61,6 +71,15 @@
     </wsdl:operation>
     <wsdl:operation name="ListarObras">
       <soap:operation soapAction="http://tempuri.org/IServicioObra/ListarObras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarObrasArtista">
+      <soap:operation soapAction="http://tempuri.org/IServicioObra/ListarObrasArtista" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

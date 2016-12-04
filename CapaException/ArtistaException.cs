@@ -8,6 +8,10 @@ namespace CapaException
 {
     public class ArtistaException : Exception
     {
+        /// <summary>
+        /// Método Exception para clase Artista
+        /// </summary>
+        /// <param name="mensaje"></param>
         public ArtistaException(string mensaje) : base(mensaje)
         {
 

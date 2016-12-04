@@ -10,8 +10,10 @@ namespace CapaInterface
 {
     public interface IObraCompletoBO
     {
+        #region
         IList<ObraCompleto> ListarObrasCompleto();
         IList<ObraCompleto> ListarObrasCompleto365();
         IList<ObraCompleto> ListarObrasCompletoArtista(string rut);
+        #endregion
     }
 }

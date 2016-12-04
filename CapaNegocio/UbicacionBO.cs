@@ -19,10 +19,15 @@ namespace CapaNegocio
             this._objContext = new MuseoEntities();
             this._objContext.Configuration.ProxyCreationEnabled = false;
         }
-
+        #region Métodos
+        /// <summary>
+        /// Métodos que lista las ubicaciones
+        /// </summary>
+        /// <returns></returns>
         public IList<Ubicacion> ListarUbicaciones()
         {
             return this._objContext.Ubicacion.ToList();
         }
+        #endregion
     }
 }

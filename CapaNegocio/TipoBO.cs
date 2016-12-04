@@ -18,10 +18,15 @@ namespace CapaNegocio
             this._objContext = new MuseoEntities();
             this._objContext.Configuration.ProxyCreationEnabled = false;
         }
-
+        #region Métodos
+        /// <summary>
+        /// Método que lista los tipos de personas
+        /// </summary>
+        /// <returns></returns>
         public IList<Tipo> ListarTipos()
         {
             return this._objContext.Tipo.ToList();
         }
+        #endregion
     }
 }

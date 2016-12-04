@@ -10,6 +10,8 @@ namespace CapaInterface
 {
     public interface ITipoBO
     {
+        #region Métodos
         IList<Tipo> ListarTipos();
+        #endregion
     }
 }

@@ -10,7 +10,9 @@ namespace CapaInterface
 {
     public interface IUsuariosBO
     {
+        #region Métodos
         bool VerificarUsuarios(string usuario);
         Usuarios BuscarUsuario(string usuario);
+        #endregion
     }
 }

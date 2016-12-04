@@ -13,13 +13,18 @@ namespace CapaNegocio
 {
     public class ArtistaBO :IArtistaBO
     {
+
         private MuseoEntities _objContext;
         public ArtistaBO()
         {
             this._objContext = new MuseoEntities();
             this._objContext.Configuration.ProxyCreationEnabled = false;
         }
-
+        #region Métodos
+        /// <summary>
+        /// Método que lista los Artistas
+        /// </summary>
+        /// <returns></returns>
         public IList<Artista> ListarArtistas()
         {
             IList<Artista> artista = (from p in _objContext.Persona 
@@ -31,5 +36,6 @@ namespace CapaNegocio
                                       }).ToList();
             return artista;
         }
+        #endregion
     }
 }

@@ -8,6 +8,10 @@ namespace CapaException
 {
     public class UsuariosException : Exception
     {
+        /// <summary>
+        /// Método Exception para clase Usuarios
+        /// </summary>
+        /// <param name="mensaje"></param>
         public UsuariosException(string mensaje) : base(mensaje)
         {
 

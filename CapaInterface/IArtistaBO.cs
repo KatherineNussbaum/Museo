@@ -10,6 +10,8 @@ namespace CapaInterface
 {
     public interface IArtistaBO
     {
+        #region Métodos
         IList<Artista> ListarArtistas();
+        #endregion
     }
 }

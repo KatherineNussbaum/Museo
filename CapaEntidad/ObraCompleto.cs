@@ -8,6 +8,7 @@ namespace CapaEntidad
 {
     public class ObraCompleto
     {
+        #region Variables
         public string Codigo { get; set; }
         public string Artista { get; set; }
         public string Estilo { get; set; }
@@ -17,6 +18,7 @@ namespace CapaEntidad
         public string CuidadosEspeciales { get; set; }
         public string Salon { get; set; }
         public DateTime? FechaIngreso { get; set; }
+        #endregion
 
         public ObraCompleto()
         {

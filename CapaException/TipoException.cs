@@ -8,6 +8,10 @@ namespace CapaException
 {
     public class TipoException : Exception
     {
+        /// <summary>
+        /// Método Exception para clase Tipo
+        /// </summary>
+        /// <param name="mensaje"></param>
         public TipoException(string mensaje) : base(mensaje)
         {
 

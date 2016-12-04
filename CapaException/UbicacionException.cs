@@ -8,6 +8,10 @@ namespace CapaException
 {
     public class UbicacionException : Exception
     {
+        /// <summary>
+        /// Método Exception para clase Ubicacion
+        /// </summary>
+        /// <param name="mensaje"></param>
         public UbicacionException(string mensaje) : base(mensaje)
         {
 

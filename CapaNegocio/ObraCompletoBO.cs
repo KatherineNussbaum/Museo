@@ -20,7 +20,11 @@ namespace CapaNegocio
             this._objContext = new MuseoEntities();
             this._objContext.Configuration.ProxyCreationEnabled = false;
         }
-
+        #region Métodos
+        /// <summary>
+        /// Método que lista las obras de arte
+        /// </summary>
+        /// <returns></returns>
         public IList<ObraCompleto> ListarObrasCompleto()
         {
             IList<ObraCompleto> obra = (from o in _objContext.Obra
@@ -43,7 +47,10 @@ namespace CapaNegocio
                                         }).ToList();
             return obra;
         }
-
+        /// <summary>
+        /// Método que lista las obras del último año ingresado
+        /// </summary>
+        /// <returns></returns>
         public IList<ObraCompleto> ListarObrasCompleto365()
         {
             DateTime inicio = DateTime.Today.AddYears(-1);
@@ -68,6 +75,11 @@ namespace CapaNegocio
             return obra;
         }
 
+        /// <summary>
+        /// Método que lista las obras de arte segun artista
+        /// </summary>
+        /// <param name="rut"></param>
+        /// <returns></returns>
         public IList<ObraCompleto> ListarObrasCompletoArtista(string rut)
         {
             if(string.IsNullOrEmpty(rut) || string.IsNullOrWhiteSpace(rut))
@@ -94,5 +106,6 @@ namespace CapaNegocio
                                         }).ToList();
             return obra;
         }
+        #endregion
     }
 }

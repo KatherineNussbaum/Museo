@@ -8,6 +8,10 @@ namespace CapaException
 {
     public class ObraException: Exception
     {
+        /// <summary>
+        /// Método Exception para clase Obra
+        /// </summary>
+        /// <param name="mensaje"></param>
         public ObraException(string mensaje) : base(mensaje)
         {
 

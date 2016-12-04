@@ -1,0 +1,5 @@
+X:\SantoTomas\Semestre 4\puntoNet\Museo\Museo\CapaException\bin\Debug\CapaException.dll
+X:\SantoTomas\Semestre 4\puntoNet\Museo\Museo\CapaException\bin\Debug\CapaException.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Museo\Museo\CapaException\obj\Debug\CapaException.csprojResolveAssemblyReference.cache
+X:\SantoTomas\Semestre 4\puntoNet\Museo\Museo\CapaException\obj\Debug\CapaException.dll
+X:\SantoTomas\Semestre 4\puntoNet\Museo\Museo\CapaException\obj\Debug\CapaException.pdb

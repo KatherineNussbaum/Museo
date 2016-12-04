@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MuseoModelStoreContainer" CdmEntityContainer="MuseoEntities">
+    <EntitySetMapping Name="Obra">
+      <EntityTypeMapping TypeName="MuseoModel.Obra">
+        <MappingFragment StoreEntitySet="Obra">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="ArtistaRut" ColumnName="ArtistaRut" />
+          <ScalarProperty Name="Estilo" ColumnName="Estilo" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Dimensiones" ColumnName="Dimensiones" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Procedencia" ColumnName="Procedencia" />
+          <ScalarProperty Name="Temperatura" ColumnName="Temperatura" />
+          <ScalarProperty Name="Humedad" ColumnName="Humedad" />
+          <ScalarProperty Name="UbicacionSalon" ColumnName="UbicacionSalon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Persona">
+      <EntityTypeMapping TypeName="MuseoModel.Persona">
+        <MappingFragment StoreEntitySet="Persona">
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="Div" ColumnName="Div" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="ApPaterno" ColumnName="ApPaterno" />
+          <ScalarProperty Name="ApMaterno" ColumnName="ApMaterno" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+          <ScalarProperty Name="Fono" ColumnName="Fono" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo">
+      <EntityTypeMapping TypeName="MuseoModel.Tipo">
+        <MappingFragment StoreEntitySet="Tipo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TipoPersona" ColumnName="TipoPersona" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ubicacion">
+      <EntityTypeMapping TypeName="MuseoModel.Ubicacion">
+        <MappingFragment StoreEntitySet="Ubicacion">
+          <ScalarProperty Name="Salon" ColumnName="Salon" />
+          <ScalarProperty Name="Iluminacion" ColumnName="Iluminacion" />
+          <ScalarProperty Name="MaxObras" ColumnName="MaxObras" />
+          <ScalarProperty Name="MetrosCuadrados" ColumnName="MetrosCuadrados" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

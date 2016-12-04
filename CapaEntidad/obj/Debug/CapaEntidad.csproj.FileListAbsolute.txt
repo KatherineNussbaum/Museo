@@ -1,0 +1,14 @@
+X:\SantoTomas\Semestre 4\puntoNet\Museo\Museo\CapaEntidad\bin\Debug\CapaEntidad.dll
+X:\SantoTomas\Semestre 4\puntoNet\Museo\Museo\CapaEntidad\bin\Debug\CapaEntidad.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Museo\Museo\CapaEntidad\obj\Debug\CapaEntidad.dll
+X:\SantoTomas\Semestre 4\puntoNet\Museo\Museo\CapaEntidad\obj\Debug\CapaEntidad.pdb
+X:\SantoTomas\Semestre 4\puntoNet\Museo\Museo\CapaEntidad\obj\Debug\CapaEntidad.csprojResolveAssemblyReference.cache
+C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaEntidad\bin\Debug\CapaDato.dll
+C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaEntidad\bin\Debug\EntityFramework.dll
+C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaEntidad\bin\Debug\CapaDato.pdb
+C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaEntidad\bin\Debug\EntityFramework.xml
+C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaEntidad\obj\Debug\CapaEntidad.csprojResolveAssemblyReference.cache
+C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaEntidad\obj\Debug\CapaEntidad.pdb

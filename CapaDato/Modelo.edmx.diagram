@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b787625582694c1d80e4c2a51e7dc67b" Name="Diagram1">
+        <EntityTypeShape EntityType="MuseoModel.Obra" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MuseoModel.Persona" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MuseoModel.Tipo" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="MuseoModel.Ubicacion" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="MuseoModel.FK__Obra__ArtistaRut__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="MuseoModel.FK__Obra__UbicacionS__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="MuseoModel.FK__Persona__Tipo__300424B4" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

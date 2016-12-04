@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MuseoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Obra">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ArtistaRut" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Estilo" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Valor" Type="Int64" />
+    <Property Name="Dimensiones" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="FechaCreacion" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Name="Procedencia" Type="DateTime" Precision="0" />
+    <Property Name="Temperatura" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Humedad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UbicacionSalon" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK__Obra__ArtistaRut__34C8D9D1" FromRole="Obra" ToRole="Persona" />
+    <NavigationProperty Name="Ubicacion" Relationship="Self.FK__Obra__UbicacionS__35BCFE0A" FromRole="Obra" ToRole="Ubicacion" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="Rut" />
+    </Key>
+    <Property Name="Rut" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Div" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Nombres" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ApPaterno" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ApMaterno" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Sexo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="Domicilio" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Fono" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Tipo" Type="Int32" />
+    <NavigationProperty Name="Obra" Relationship="Self.FK__Obra__ArtistaRut__34C8D9D1" FromRole="Persona" ToRole="Obra" />
+    <NavigationProperty Name="Tipo1" Relationship="Self.FK__Persona__Tipo__300424B4" FromRole="Persona" ToRole="Tipo" />
+  </EntityType>
+  <EntityType Name="Tipo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TipoPersona" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK__Persona__Tipo__300424B4" FromRole="Tipo" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="Ubicacion">
+    <Key>
+      <PropertyRef Name="Salon" />
+    </Key>
+    <Property Name="Salon" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Iluminacion" Type="Int32" />
+    <Property Name="MaxObras" Type="Int32" />
+    <Property Name="MetrosCuadrados" Type="Int32" />
+    <NavigationProperty Name="Obra" Relationship="Self.FK__Obra__UbicacionS__35BCFE0A" FromRole="Ubicacion" ToRole="Obra" />
+  </EntityType>
+  <Association Name="FK__Obra__ArtistaRut__34C8D9D1">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
+    <End Role="Obra" Type="Self.Obra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="Rut" />
+      </Principal>
+      <Dependent Role="Obra">
+        <PropertyRef Name="ArtistaRut" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Obra__UbicacionS__35BCFE0A">
+    <End Role="Ubicacion" Type="Self.Ubicacion" Multiplicity="1" />
+    <End Role="Obra" Type="Self.Obra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ubicacion">
+        <PropertyRef Name="Salon" />
+      </Principal>
+      <Dependent Role="Obra">
+        <PropertyRef Name="UbicacionSalon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Persona__Tipo__300424B4">
+    <End Role="Tipo" Type="Self.Tipo" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="Tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MuseoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Obra" EntityType="Self.Obra" />
+    <EntitySet Name="Persona" EntityType="Self.Persona" />
+    <EntitySet Name="Tipo" EntityType="Self.Tipo" />
+    <EntitySet Name="Ubicacion" EntityType="Self.Ubicacion" />
+    <AssociationSet Name="FK__Obra__ArtistaRut__34C8D9D1" Association="Self.FK__Obra__ArtistaRut__34C8D9D1">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Obra" EntitySet="Obra" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Obra__UbicacionS__35BCFE0A" Association="Self.FK__Obra__UbicacionS__35BCFE0A">
+      <End Role="Ubicacion" EntitySet="Ubicacion" />
+      <End Role="Obra" EntitySet="Obra" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Persona__Tipo__300424B4" Association="Self.FK__Persona__Tipo__300424B4">
+      <End Role="Tipo" EntitySet="Tipo" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

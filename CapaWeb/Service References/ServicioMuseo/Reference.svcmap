@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="da853c84-04aa-4c35-802a-abb96950253f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50274/MuseoWCF.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MuseoWCF.disco" MetadataType="Disco" ID="52cb8753-6ebf-436f-b4d0-a630cfb3859b" SourceId="1" SourceUrl="http://localhost:50274/MuseoWCF.svc?disco" />
+    <MetadataFile FileName="MuseoWCF.xsd" MetadataType="Schema" ID="6befed7e-6db1-45d7-bebf-f416e1e63182" SourceId="1" SourceUrl="http://localhost:50274/MuseoWCF.svc?xsd=xsd1" />
+    <MetadataFile FileName="MuseoWCF.wsdl" MetadataType="Wsdl" ID="36db6520-411d-49cd-b74e-9b7418040654" SourceId="1" SourceUrl="http://localhost:50274/MuseoWCF.svc?wsdl" />
+    <MetadataFile FileName="MuseoWCF1.xsd" MetadataType="Schema" ID="02d43c15-70a7-47e3-a6fb-8aa51f10bb28" SourceId="1" SourceUrl="http://localhost:50274/MuseoWCF.svc?xsd=xsd0" />
+    <MetadataFile FileName="MuseoWCF2.xsd" MetadataType="Schema" ID="734e62d4-0e88-458a-a52e-6e58706e3c65" SourceId="1" SourceUrl="http://localhost:50274/MuseoWCF.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

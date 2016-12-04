@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Temnplate.Master" AutoEventWireup="true" CodeBehind="AgregarObras.aspx.cs" Inherits="CapaWeb.AgregarObras" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="AgregarObras.aspx.cs" Inherits="CapaWeb.AgregarObras" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {

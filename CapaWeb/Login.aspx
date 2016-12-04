@@ -11,13 +11,13 @@
             width: 123px;
         }
         .auto-style2 {
-            width: 333px;
+            width: 300px;
         }
         .auto-style3 {
             width: 86px;
         }
         .auto-style4 {
-            width: 333px;
+            width: 300px;
             height: 25px;
         }
         .auto-style5 {
@@ -34,19 +34,22 @@
     </style>
 </head>
 <body>
+    
     <form id="form1" runat="server">
     <div>
         <table style="width: 100%;">
             <tr>
-                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style2">
+                    <a href="Index.aspx">Volver al Inicio</a>
+                </td>
                 <td class="auto-style3"></td>
                 <td class="auto-style1"><h3>Login</h3></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style2"<asp:Label ID="LblMensaje" Visible="false" runat="server" Text="Label"></td>
                 <td colspan="3">
-                    <asp:Label ID="LblMensaje" Visible="false" runat="server" Text="Label"></asp:Label>
+                    </asp:Label>
                 </td>
             </tr>
             <tr>
@@ -61,11 +64,11 @@
             </tr>
             <tr>
                 <td class="auto-style2" rowspan="2">
-                    <asp:ValidationSummary ID="ValSumLogin" runat="server" ShowMessageBox="True" ShowSummary="False" />
+                    <asp:ValidationSummary ID="ValSumLogin" runat="server" ShowMessageBox="True" ShowSummary="False" Width="308px" />
                 </td>
                 <td class="auto-style3">Contraseña:</td>
                 <td class="auto-style1">
-                    <asp:TextBox ID="TxtPass" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TxtPass" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
                 <td>
                     <asp:RequiredFieldValidator ID="RfvPass" runat="server" ErrorMessage="Contraseña es obligatorio" ControlToValidate="TxtPass">*</asp:RequiredFieldValidator>

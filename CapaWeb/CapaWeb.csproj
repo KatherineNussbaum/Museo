@@ -69,6 +69,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AgregarObras.aspx" />
+    <Content Include="img\logo.jpg" />
+    <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="packages.config" />
     <Content Include="Reportes.aspx" />
@@ -162,7 +164,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Temnplate.Master" />
+    <Content Include="Template.Master" />
     <None Include="Service References\ObraServ\ServicioObra.wsdl" />
     <None Include="Service References\ObraServ\ServicioObra.xsd">
       <SubType>Designer</SubType>
@@ -219,6 +221,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AgregarArtista.aspx" />
@@ -242,6 +245,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -293,12 +303,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Temnplate.Master.cs">
-      <DependentUpon>Temnplate.Master</DependentUpon>
+    <Compile Include="Template.Master.cs">
+      <DependentUpon>Template.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Temnplate.Master.designer.cs">
-      <DependentUpon>Temnplate.Master</DependentUpon>
+    <Compile Include="Template.Master.designer.cs">
+      <DependentUpon>Template.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

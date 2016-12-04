@@ -11,7 +11,7 @@ namespace CapaWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session["usuario"] = null;
         }
 
         protected void Mensaje(string mensaje)
@@ -41,6 +41,11 @@ namespace CapaWeb
                     Mensaje("La contraseña no es correcta.");
                 }
             }
+        }
+
+        protected void BtnHome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Index.aspx");
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Temnplate.Master" AutoEventWireup="true" CodeBehind="Reportes.aspx.cs" Inherits="CapaWeb.Reportes" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Template.Master" AutoEventWireup="true" CodeBehind="Reportes.aspx.cs" Inherits="CapaWeb.Reportes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {

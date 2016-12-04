@@ -47,16 +47,16 @@ C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaWeb\obj\Debug\CapaWeb.cspro
 C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaWeb\obj\Debug\CapaWeb.dll
 C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaWeb\obj\Debug\CapaWeb.pdb
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\csc.exe
-C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\VBCSCompiler.exe
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\Microsoft.CSharp.Core.targets
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\System.Reflection.Metadata.dll
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\vbc.exe
-C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\VBCSCompiler.exe
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\CapaWeb.dll.config
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\CapaWeb.dll
@@ -65,3 +65,4 @@ C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\Microsoft.CodeDom.Provider
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\obj\Debug\CapaWeb.dll
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\obj\Debug\CapaWeb.pdb
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaWeb\obj\Debug\CapaWeb.csprojResolveAssemblyReference.cache

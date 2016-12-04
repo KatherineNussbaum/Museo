@@ -11,7 +11,10 @@ namespace CapaWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["usuario"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
         }
 
         protected void BtnMenu365_Click(object sender, EventArgs e)

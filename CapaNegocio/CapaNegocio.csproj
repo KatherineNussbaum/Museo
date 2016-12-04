@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="ArtistaBO.cs" />
     <Compile Include="ObraBO.cs" />
+    <Compile Include="ObraCompletoBO.cs" />
     <Compile Include="PersonaBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoBO.cs" />

@@ -38,7 +38,6 @@ C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaServicio\bin\CapaException.
 C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaServicio\obj\Debug\CapaServicio.csprojResolveAssemblyReference.cache
 C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaServicio\obj\Debug\CapaServicio.dll
 C:\Users\rvergara\Desktop\Examen Net\Museo\Museo\CapaServicio\obj\Debug\CapaServicio.pdb
-C:\Users\Katherine Nussbaum\Desktop\Museo\CapaServicio\obj\Debug\CapaServicio.csprojResolveAssemblyReference.cache
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaServicio\bin\CapaServicio.dll.config
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaServicio\bin\CapaServicio.dll
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaServicio\bin\CapaServicio.pdb
@@ -56,5 +55,6 @@ C:\Users\Katherine Nussbaum\Desktop\Museo\CapaServicio\bin\CapaNegocio.pdb
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaServicio\bin\EntityFramework.xml
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaServicio\bin\EntityFramework.SqlServer.xml
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaServicio\bin\CapaException.pdb
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaServicio\obj\Debug\CapaServicio.csprojResolveAssemblyReference.cache
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaServicio\obj\Debug\CapaServicio.dll
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaServicio\obj\Debug\CapaServicio.pdb

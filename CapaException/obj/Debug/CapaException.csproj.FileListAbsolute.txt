@@ -7,3 +7,4 @@ C:\Users\Katherine Nussbaum\Desktop\Museo\CapaException\bin\Debug\CapaException.
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaException\bin\Debug\CapaException.pdb
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaException\obj\Debug\CapaException.dll
 C:\Users\Katherine Nussbaum\Desktop\Museo\CapaException\obj\Debug\CapaException.pdb
+C:\Users\Katherine Nussbaum\Desktop\Museo\CapaException\obj\Debug\CapaException.csprojResolveAssemblyReference.cache

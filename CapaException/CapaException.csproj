@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArtistaException.cs" />
+    <Compile Include="ObraCompletoException.cs" />
     <Compile Include="ObraException.cs" />
     <Compile Include="PersonaException.cs" />
     <Compile Include="TipoException.cs" />

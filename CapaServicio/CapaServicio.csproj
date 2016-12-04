@@ -71,6 +71,7 @@
   <ItemGroup>
     <Content Include="ServicioArtista.svc" />
     <Content Include="ServicioObra.svc" />
+    <Content Include="ServicioObraCompleto.svc" />
     <Content Include="ServicioPersona.svc" />
     <Content Include="ServicioTipo.svc" />
     <Content Include="ServicioUbicacion.svc" />
@@ -80,6 +81,7 @@
   <ItemGroup>
     <Compile Include="IServicioArtista.cs" />
     <Compile Include="IServicioObra.cs" />
+    <Compile Include="IServicioObraCompleto.cs" />
     <Compile Include="IServicioPersona.cs" />
     <Compile Include="IServicioTipo.cs" />
     <Compile Include="IServicioUbicacion.cs" />
@@ -90,6 +92,9 @@
     </Compile>
     <Compile Include="ServicioObra.svc.cs">
       <DependentUpon>ServicioObra.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ServicioObraCompleto.svc.cs">
+      <DependentUpon>ServicioObraCompleto.svc</DependentUpon>
     </Compile>
     <Compile Include="ServicioPersona.svc.cs">
       <DependentUpon>ServicioPersona.svc</DependentUpon>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d33e84a5-cd28-48a6-b6f8-6e21c3f279ec" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50274/ServicioObraCompleto.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioObraCompleto.xsd" MetadataType="Schema" ID="3981dcb7-d625-43e1-ac51-6c76d8b630ed" SourceId="1" SourceUrl="http://localhost:50274/ServicioObraCompleto.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioObraCompleto.wsdl" MetadataType="Wsdl" ID="b450b7f7-b257-4f21-8c61-8484ca75fe35" SourceId="1" SourceUrl="http://localhost:50274/ServicioObraCompleto.svc?wsdl" />
+    <MetadataFile FileName="ServicioObraCompleto1.xsd" MetadataType="Schema" ID="b11329d1-3a24-44ff-a829-2afef6173a90" SourceId="1" SourceUrl="http://localhost:50274/ServicioObraCompleto.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioObraCompleto2.xsd" MetadataType="Schema" ID="a9fb8b63-57e4-4147-8b37-084271d0766c" SourceId="1" SourceUrl="http://localhost:50274/ServicioObraCompleto.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioObraCompleto.disco" MetadataType="Disco" ID="2998d8e1-0e71-45e0-bffd-362b23bfdad0" SourceId="1" SourceUrl="http://localhost:50274/ServicioObraCompleto.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

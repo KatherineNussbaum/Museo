@@ -75,6 +75,6 @@ namespace CapaNegocio
                 throw new ObraException("Error: falta rut de artista");
             }
             return this._objContext.Obra.Where(o => o.ArtistaRut == artistaRut).ToList();
-        }
+        }   
     }
 }
